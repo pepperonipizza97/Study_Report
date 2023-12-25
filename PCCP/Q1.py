@@ -22,6 +22,7 @@ def solution(bandage, health, attacks):
 
     for i in range(max_time):
         is_attacked = any(attack[0] == i for attack in attacks)
+        
         if is_attacked:
             for attack in attacks:
                 if attack[0] == i:
